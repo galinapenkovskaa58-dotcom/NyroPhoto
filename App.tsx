@@ -1,8 +1,6 @@
 
 import React, { useState, useEffect, useMemo } from 'react';
 import Assistant from './components/Assistant';
-import { AdminDashboard } from './components/AdminDashboard';
-import { Profile } from './components/Profile';
 import {
   PrimaryButton,
   SecondaryButton,

@@ -11,13 +11,13 @@ import {
 } from './components/UI';
 import { Branch, TariffType, BookingData, GiftData, QuestionData, Lead, RequestStatus, QuizState, ReferenceItem, ChatMessage } from './types';
 import { TARIFFS, STYLE_CATEGORIES, SUPER_ADMIN_ID, VSPYSHKA_AVATARS, QUIZ_QUESTIONS } from './constants';
-import { submitToGoogleSheets } from './services/sheets';
+import { submitToGoogleSheets } from './components/services/sheets';
 import { 
   sendAdminNotification, 
   formatBookingMessage, 
   formatGiftMessage, 
   formatQuestionMessage 
-} from './services/notifications';
+} from './components/services/notifications';
 
 const ProgressBar: React.FC<{ current: number; total: number }> = ({ current, total }) => (
   <div className="flex items-center justify-between mb-8 px-6 pt-2">
